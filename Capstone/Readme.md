@@ -23,6 +23,7 @@ The detailed explanation of the model architecture is available in the link [her
 
 **3.Loss Function:**<a name="loss"></a>
 The loss function used in this experiment is a combination of CrossEntropyLoss and HingeEmbeddingLoss which have been scaled to 99.5 and 0.05 respectively.
+
 **4.Data Preparation:**<a name="dataprep"></a>
 During the training of the model it was found that two similar queue's when passed through the model would give different result even though they mean the same.
 Ex:
