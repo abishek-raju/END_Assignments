@@ -52,8 +52,9 @@ if num > 1:
            print(num,"is not a prime number")
            print(f"{i} times {num//i} is {num}")
            break
-   else:
-       print(f"{num} is a prime number")
+       else:
+           print(f"{num} is a prime number")
+           break
 
 else:
    print(f"{num} is not a prime number")
@@ -61,10 +62,10 @@ else:
 
 # Write a python function that prints the factors of a given number
 def print_factors(x):
-   print(f"The factors of {x} are:")
-   for i in range(1, x + 1):
-       if x % i == 0:
-           print(i)
+    print(f"The factors of {x} are:")
+    for i in range(1, x + 1):
+        if x % i == 0:
+            print(i)
 
 # Write a program to find the factorial of a number
 num = 13
@@ -85,13 +86,11 @@ else:
 # Write a python function to print whether a number is negative, positive or zero
 def check_pnz(num):
     if num > 0:
-       print("Positive number")
-
+        print("Positive number")
     elif num == 0:
-       print("Zero")
-
+        print("Zero")
     else:
-       print("Negative number")
+        print("Negative number")
 
 
 # Write a program to print the multiplication table of a given number
@@ -807,7 +806,7 @@ l1=[1,2,3]
 l2=[4,5,6]
 print('multiply two list values:',[x*y for x in l1 for y in l2])
 
-# write the list comprehension to pick out only negative integers from a given list ‘l’.
+# write the list comprehension to pick out only negative integers from a given list â€˜lâ€™.
 l1=[1,2,3,-4,-8]
 
 print('negative integers:', [x for x in l1 if x<0])
@@ -5180,7 +5179,7 @@ def amstrong_check(n):
     else:
         return False
 
-# Write a Python Program to Print the Pascal’s triangle for n number of rows given by the user
+# Write a Python Program to Print the Pascalâ€™s triangle for n number of rows given by the user
 
 n=10
 a=[]
@@ -7271,7 +7270,7 @@ else:
 # write a python function to find the URL from an input string using the regular expression
 import re 
 def Find(string): 
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url] 
       
@@ -9594,12 +9593,12 @@ def moveSpaces(str1):
     result = ' '*space    
     return result + ''.join(no_spaces)
 
-#84 Write a Python program to find maximum length of consecutive 0’s in a given binary string.
+#84 Write a Python program to find maximum length of consecutive 0â€™s in a given binary string.
 def max_consecutive_0(input_str): 
      return  max(map(len,input_str.split('1')))
 str1 = '111000010000110'
 print("Original string:" + str1)
-print("Maximum length of consecutive 0’s:")
+print("Maximum length of consecutive 0â€™s:")
 
 #85 Write a Python program that iterate over elements repeating each as many times as its count.
 from collections import Counter
@@ -11059,7 +11058,7 @@ print("The extracted words : " + str(res))
 import re 
   
 def FindUrls(string): 
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url] 
 	
@@ -14829,7 +14828,7 @@ def syslvester_seq(n):
 
 # 82
 # Write a Python function to return Tribonacci's Sequence
-# T(n) = T(n − 1) + T(n − 2) + T(n − 3) for n ≥ 3 [T(0) = 0, T(1) = 1, T(2) = 1]
+# T(n) = T(n âˆ’ 1) + T(n âˆ’ 2) + T(n âˆ’ 3) for n â‰¥ 3 [T(0) = 0, T(1) = 1, T(2) = 1]
 def tribonacci_seq(n):
     if n >= 0:
         if n == 0:
@@ -14843,7 +14842,7 @@ def tribonacci_seq(n):
         
 # 83
 # Write a Python function to return Pell's Sequence
-# a(n) = 2a(n − 1) + a(n − 2) for n ≥ 2, with a(0) = 0, a(1) = 1. 
+# a(n) = 2a(n âˆ’ 1) + a(n âˆ’ 2) for n â‰¥ 2, with a(0) = 0, a(1) = 1. 
 def pell_seq(n):
     if n >= 0:
         if n == 0:
@@ -14855,14 +14854,14 @@ def pell_seq(n):
         
 # 84
 # Write a Python function to return Fermat's Sequence
-# Fn = 2 ** 2n + 1 for n ≥ 0. 
+# Fn = 2 ** 2n + 1 for n â‰¥ 0. 
 def fermat_seq(n):
     if n >= 0:
         return 2 ** (2**n) + 1
   
 # 85
 # Write a Python function to return Padovan's Sequence
-# P(n) = P(n − 2) + P(n − 3) for n ≥ 3, with P(0) = P(1) = P(2) = 1.
+# P(n) = P(n âˆ’ 2) + P(n âˆ’ 3) for n â‰¥ 3, with P(0) = P(1) = P(2) = 1.
 def padovan_seq(n):
     if n >= 0:
         if n in {0,1,2}:
@@ -14872,7 +14871,7 @@ def padovan_seq(n):
     
 # 86
 # Write a Python function to return Jacobsthal's number
-# a(n) = a(n − 1) + 2a(n − 2) for n ≥ 2, with a(0) = 0, a(1) = 1.
+# a(n) = a(n âˆ’ 1) + 2a(n âˆ’ 2) for n â‰¥ 2, with a(0) = 0, a(1) = 1.
 def jacobsthal_seq(n):
      if n >= 0:
         if n == 0:
@@ -14885,7 +14884,7 @@ def jacobsthal_seq(n):
     
 # 87
 #  Write a Python function to return perrin's number
-# P(n) = P(n−2) + P(n−3) for n ≥ 3, with P(0) = 3, P(1) = 0, P(2) = 2. 
+# P(n) = P(nâˆ’2) + P(nâˆ’3) for n â‰¥ 3, with P(0) = 3, P(1) = 0, P(2) = 2. 
 def perrins_number(n):
     if n >= 0:
         if n == 0:
@@ -14900,7 +14899,7 @@ def perrins_number(n):
        
 # 88
 #  Write a Python function to return cullen number
-# Cn = n⋅2n + 1, with n ≥ 0. 
+# Cn = nâ‹…2n + 1, with n â‰¥ 0. 
 def cullen_number(n):
     if n >= 0:
         return n * 2 ** n + 1
@@ -14908,7 +14907,7 @@ def cullen_number(n):
 
 # 89
 #  Write a Python function to return woodall numbers
-# n⋅2n − 1, with n ≥ 1. 
+# nâ‹…2n âˆ’ 1, with n â‰¥ 1. 
 def woodall_number(n):
     if n >= 0:
         return n * 2 ** n - 1
@@ -14916,7 +14915,7 @@ def woodall_number(n):
     
 # 90
 #  Write a Python function to return carol numbers
-# (2n − 1)**2 - 2, with n ≥ 1. 
+# (2n âˆ’ 1)**2 - 2, with n â‰¥ 1. 
 def carol_number(n):
     if n >= 0:
         return (2**n - 1)**2 - 2
@@ -14924,13 +14923,13 @@ def carol_number(n):
 
 # 91
 #  Write a Python function to return star numbers
-# The nth star number is Sn = 6n(n − 1) + 1. 
+# The nth star number is Sn = 6n(n âˆ’ 1) + 1. 
 def star_number(n):
     return 6*n*(n-1)+1
     
 # 92
 #  Write a Python function to return stella octangula numbers
-# Stella octangula numbers: n (2n2 − 1), with n ≥ 0. 
+# Stella octangula numbers: n (2n2 âˆ’ 1), with n â‰¥ 0. 
 def stella_octangula_number(n):
     if n >= 0:
         return n*(2**n - 1)
@@ -19350,7 +19349,7 @@ for item in intersection:
   firstSet.remove(item)
 print("First Set after removing common element ", firstSet)
 
-# Given a dictionary get all values from the dictionary and add it in a list but don’t add duplicates
+# Given a dictionary get all values from the dictionary and add it in a list but donâ€™t add duplicates
 speed  ={'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53,
           'july':54, 'Aug':44, 'Sept':54} 
 
@@ -20282,7 +20281,7 @@ import re
   
 def find_urls(string): 
    
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url] 
 
@@ -22400,7 +22399,7 @@ def sum_of_digits(num):
 import re 
   
 def Find(string): 
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url]
 
@@ -23952,7 +23951,7 @@ import re
   
 def find_urls(string): 
    
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url] 
 
@@ -25617,7 +25616,7 @@ for i in range(lower,upper+1):
     if(i%2!=0):
         print(i)
 
-# Write a python program print all the integers that aren’t divisible by either 2 or 3 and lies between 1 and 25.
+# Write a python program print all the integers that arenâ€™t divisible by either 2 or 3 and lies between 1 and 25.
 for i in range(0,25):
     if(i%2!=0 and i%3!=0):
         print(i)
@@ -26691,7 +26690,7 @@ for item in intersection:
   firstSet.remove(item)
 print("First Set after removing common element ", firstSet)
 
-# Given a dictionary get all values from the dictionary and add it in a list but don’t add duplicates
+# Given a dictionary get all values from the dictionary and add it in a list but donâ€™t add duplicates
 speed  ={'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53,
           'july':54, 'Aug':44, 'Sept':54} 
 
@@ -27009,7 +27008,7 @@ import re
   
 def find_urls(string): 
    
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?Â«Â»â€œâ€â€˜â€™]))"
     url = re.findall(regex,string)       
     return [x[0] for x in url] 
 
@@ -30466,7 +30465,7 @@ def amstrong_check(n):
     else:
         return False
 
-# Write a Python Program to Print the Pascal’s triangle for n number of rows given by the user
+# Write a Python Program to Print the Pascalâ€™s triangle for n number of rows given by the user
 
 n=10
 a=[]
@@ -31409,7 +31408,7 @@ def gray_to_binary(n):
 	
 	
 	
-# write a Python Program to Replace all Occurrences of ‘a’ with $ in a String
+# write a Python Program to Replace all Occurrences of â€˜aâ€™ with $ in a String
 def replacestring(txt):
 	return txt.replace('A','$')
 	
@@ -32215,7 +32214,7 @@ df = ser.to_frame().reset_index()
 print(df.head())
 
 
-# Write a Python program to keep only top 2 most frequent values as it is and replace everything else as ‘Other’ in a series
+# Write a Python program to keep only top 2 most frequent values as it is and replace everything else as â€˜Otherâ€™ in a series
 import pandas as pd
 import numpy as np
 np.random.RandomState(100)
@@ -32233,7 +32232,7 @@ deciled = pd.qcut(ser, q=[0, .10, .20, .3, .4, .5, .6, .7, .8, .9, 1],
 print(deciled)
 
 
-# Write a Python program to create a TimeSeries starting ‘2000-01-01’ and 10 weekends (saturdays) after that having random numbers as values
+# Write a Python program to create a TimeSeries starting â€˜2000-01-01â€™ and 10 weekends (saturdays) after that having random numbers as values
 import pandas as pd
 import numpy as np
 ser = pd.Series(np.random.randint(1,10,10), pd.date_range('2000-01-01', periods=10, freq='W-SAT'))
@@ -36967,12 +36966,12 @@ def moveSpaces(str1):
     result = ' '*space    
     return result + ''.join(no_spaces)
 
-#84 Write a Python program to find maximum length of consecutive 0’s in a given binary string.
+#84 Write a Python program to find maximum length of consecutive 0â€™s in a given binary string.
 def max_consecutive_0(input_str): 
      return  max(map(len,input_str.split('1')))
 str1 = '111000010000110'
 print("Original string:" + str1)
-print("Maximum length of consecutive 0’s:")
+print("Maximum length of consecutive 0â€™s:")
 
 #85 Write a Python program that iterate over elements repeating each as many times as its count.
 from collections import Counter
@@ -38237,7 +38236,7 @@ def vowel_remover(text):
             string += l
     return string
 
-# write a python program to print all integers that aren’t divisible by either 2 or 3 and lies between 1 and 50.
+# write a python program to print all integers that arenâ€™t divisible by either 2 or 3 and lies between 1 and 50.
 for i in range(0,50):
   if((i%2!=0) & (i%3!=0)):
       print(i)
@@ -39465,7 +39464,7 @@ for item in intersection:
   firstSet.remove(item)
 print("First Set after removing common element ", firstSet)
 
-# Given a dictionary get all values from the dictionary and add it in a list but don’t add duplicates
+# Given a dictionary get all values from the dictionary and add it in a list but donâ€™t add duplicates
 speed  ={'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53,
           'july':54, 'Aug':44, 'Sept':54} 
 
