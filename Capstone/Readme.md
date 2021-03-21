@@ -1,16 +1,16 @@
 # Capstone Report
 
 ### Contents
-[1.Data Cleaning](#datacleaning)
-[2.Model Architecture](#architecture)
-[3.Loss Function](#loss)
-[4.Data Preparation](#dataprep)
-[5.Python Code Embedding](#embedding)
-[6.Evaluation Metrics](#metric)
-[7.Outputs](#outputs)
-[8.Attention Graphs](#attention)
-[9.Others](#others)
-[10.References](#references)
+[1.Data Cleaning](#datacleaning)  
+[2.Model Architecture](#architecture)  
+[3.Loss Function](#loss)  
+[4.Data Preparation](#dataprep)  
+[5.Python Code Embedding](#embedding)  
+[6.Evaluation Metrics](#metric)  
+[7.Outputs](#outputs)  
+[8.Attention Graphs](#attention)  
+[9.Others](#others)  
+[10.References](#references)  
 
 
 
