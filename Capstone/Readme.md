@@ -1,4 +1,4 @@
-#Capstone Report
+# Capstone Report
 
 1.Data Cleaning:
 The Dataset is a text file with pair's of queue and python code snippet's. Each example is seperated by a new_line character and '#' symbol**(\n#) **.Additionally some sentences start with a space after the '#' symbol and some don't, to remove them the queue is first tokenised and checked for space's in the beginning of the sentence.
